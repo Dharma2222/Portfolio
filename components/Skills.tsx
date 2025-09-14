@@ -63,7 +63,7 @@ const defaultGridCategories: SkillCategory[] = [
   ]},
   { title: 'Testing', skills: [
     { name: 'Jest', icon: FlaskConical, color: '#C21325' }, 
-    { name: 'React Testing Library', icon: FlaskConical, color: '#61DAFB' },
+    { name: 'Junit', icon: FlaskConical, color: '#61DAFB' },
     { name: 'Playwright', icon: FlaskConical, color: '#2EAD33' }, 
     { name: 'Cypress', icon: FlaskConical, color: '#17202C' },
     { name: 'Unit & Integration', icon: FlaskConical, color: '#FFD23F' }, 
