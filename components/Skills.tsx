@@ -168,7 +168,7 @@ function FloatingSkillsBackground({
         {floatingSkills.map((floatingSkill) => {
           const initial = getInitialPosition(floatingSkill.direction);
           const final = getFinalPosition(floatingSkill.direction, initial);
-          const Icon = floatingSkill.skill.icon;
+          const Icon:any = floatingSkill.skill.icon;
 
           return (
             <motion.div
@@ -247,12 +247,12 @@ function FloatingSkillsBackground({
 /* ----------------------------------------------------------------------------
   Motion presets (enhanced)
 ---------------------------------------------------------------------------- */
-const headerMotion = {
+const headerMotion: any = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const cardEnter = {
+const cardEnter: any = {
   initial: { opacity: 0, y: 18, scale: 0.985 },
   whileInView: { 
     opacity: 1, 
@@ -341,15 +341,15 @@ const rowAnimations = [
   Enhanced Row component with directional animations
 ---------------------------------------------------------------------------- */
 function SkillRow({ s, i }: { s: SkillItem; i: number }) {
-  const Icon = s.icon;
+  const Icon: any= s.icon;
   const [isHovered, setIsHovered] = useState(false);
   
   // Cycle through different directions
-  const animationVariant = rowAnimations[i % 4];
+  const animationVariant: any= rowAnimations[i % 4];
 
   return (
     <motion.div
-      variants={animationVariant}
+      variants ={animationVariant}
       className="group relative flex items-center gap-3 rounded-xl border border-[rgb(var(--border))]
                  bg-[rgb(var(--bg-primary))] hover:bg-[rgb(var(--bg-tertiary))]
                  text-[rgb(var(--fg-secondary))] hover:text-[rgb(var(--fg-primary))]
