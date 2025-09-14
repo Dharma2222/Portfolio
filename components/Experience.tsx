@@ -18,7 +18,7 @@ export type EducationItem = {
   degree: string;
   start: string;
   end: string;
-  gpa?: string;
+  gpa: string;
   location: string;
 };
 
